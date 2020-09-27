@@ -1,0 +1,88 @@
+@charset "utf-8";
+/*@import url("common.css");*/
+
+
+.product{}
+
+.product .lst_prd_type{}
+.product .lst_prd_type ul{margin-top:0;}
+
+.product .lst_guide{margin-top:20px;}
+.product .lst_guide ul{}
+.product .lst_guide ul li{margin-top:11px;padding-left:17px;font-size:14px;color:#8b8278;line-height:22px;text-indent:-17px;}
+.product .lst_guide ul li:first-child{margin-top:0;}
+.product .lst_guide ul li span{display:block;text-indent:-7px}
+
+.product .prd_detail{}
+.product .prd_info{}
+.product .prd_info:after{display:block;content:'';clear:both;}
+.product .prd_info .prd_img_view{overflow:hidden;position:relative;float:left;width:588px;height:588px;box-shadow:1px 2px 3px rgba(69,52,27,0.35)}
+.product .prd_info .prd_img_view .prd_tag{overflow:hidden;position:absolute;top:40px;left:20px;z-index:10;}
+.product .prd_info .prd_img_view .prd_tag .ico{float:left;margin-right:10px;margin-bottom: 10px;}
+.product .prd_info .prd_img_view .prd_sns{position:absolute;top:40px;right:20px;z-index:10;}
+.product .prd_info .prd_img_view .prd_edge{position:absolute;bottom:47px;right:20px;z-index:10;}
+.product .prd_info .prd_img_view .prd_edge ul{}
+.product .prd_info .prd_img_view .prd_edge ul:after{display:block;content:'';clear:both;}
+.product .prd_info .prd_img_view .prd_edge ul li{float:left;min-width:125px;margin-left:15px;padding:0 20px;border-radius:19px;background:url(../img/bg/bg_black.png) repeat-x 0 0;border:1px solid #fff;font-size:16px;color:#fff;text-align:center;line-height:36px;box-shadow:0 1px 1px rgba(255,255,255,0.2)}
+.product .prd_info .prd_img_view .prd_edge ul li a{color:#fff;}
+.product .prd_info .prd_img_view .prd_edge ul li:first-child{margin-left:0;}
+.product .prd_info .prd_img_view .prd_img{}
+.product .prd_info .prd_img_view .prd_img img{width:588px;height:588px;}
+.product .prd_info .prd_img_view .prd_img .btn_slide{bottom:50px}
+
+.product .prd_info .prd_img_view .allergy_info{position:absolute;bottom:47px;left:20px;z-index:50;}
+.product .prd_info .prd_img_view .allergy_info a{display:block;padding:0 20px 0 40px;border-radius:18px;background:#f06417 url(../img/ico_mark.jpg) no-repeat 16px 50%;font-size:16px;font-weight:500;color:#fff;line-height:37px;}
+
+.product .prd_info .prd_img_view .view_pic{position:absolute;bottom:12px;left:0;width:100%;padding:0 10px;font-size:14px;font-weight:400;color:#777066;z-index:100;text-align:right}
+
+.product .prd_info .prd_order_view{float:right;position:relative;width:395px;height:588px;padding:42px 20px;background-color:#fff;box-shadow:1px 2px 3px rgba(69,52,27,0.35)}
+.product .prd_info .prd_order_view .prd_title{font-size:24px;font-weight:500;color:#38474f;line-height:24px;text-align:center}
+.product .prd_info .prd_order_view .prd_price{overflow:hidden;margin-top:20px;font-size:0;text-align:center;}
+.product .side_detail .prd_info .prd_order_view .prd_price{margin-top:15px;padding-bottom:22px;}
+
+.product .prd_info .prd_order_view .prd_price p{display:inline-block;margin-left:25px;font-size:18px;color:#717171;line-height:20px;vertical-align:middle;}
+.product .prd_info .prd_order_view .prd_price p:first-child{margin-left:0;}
+.product .prd_info .prd_order_view .prd_price p .ico{margin-right:10px;margin-top:-2px;}
+
+.product .prd_info .prd_order_phone{position:absolute;bottom:0;left:0;width:100%;padding-bottom:160px;background:url(../img/img_person.png) no-repeat 107px 100%;text-align:center;}
+.product .prd_info .prd_order_phone dl{display:inline-block;position:relative;padding:18px 35px 16px;border:2px solid #bebebe;border-radius:16px}
+.product .prd_info .prd_order_phone dl:after{display:block;content:'';position:absolute;bottom:-19px;left:50%;width:25px;height:19px;margin-left:-11px;background:url(../img/bul/bul_arr_dw2.png) no-repeat 0 0;}
+.product .prd_info .prd_order_phone dt{font-size:16px;color:#808486;}
+.product .prd_info .prd_order_phone dd{margin-top:6px;font-size:32px;font-weight:500;color:#38474f;}
+.product .prd_info .prd_order_phone dd .ico{margin:-3px 5px 3px 0;}
+
+
+
+.product .prd_features{margin-top:20px;}
+.product .prd_features ul{overflow-y:hidden;}
+.product .prd_features ul li{float:left;position:relative;width:33%;background-color:#767067}
+.product .prd_features ul li:first-child{width:34%;}
+.product .prd_features ul li:after{display:block;content:'';position:absolute;top:17px;bottom:17px;left:0;width:2px;background-color:#90887a;}
+.product .prd_features ul li:first-child:after{display:none;}
+.product .prd_features ul li a{display:block;;font-size:16px;font-weight:500;color:#fff;text-align:center;line-height:56px;}
+
+.product .prd_detail_view{margin-top:20px;}
+.product .prd_detail_view .tab_type4{}
+.product .prd_detail_view .btn_tab{}
+.product .prd_detail_view .btn_tab li{}
+.product .prd_detail_view .btn_tab li a{}
+.product .prd_detail_view .tab_content_wrap{padding:45px 70px;}
+.product .prd_detail_view .tab_content{}
+
+.product .prd_detail_view .detail_view_info{}
+.product .prd_detail_view .detail_view_info img{display:block;width:100%;}
+.product .prd_detail_view .detail_view_info p{margin-top:20px;font-size:16px;color:#717171;line-height:26px;}
+.product .prd_detail_view .detail_view_info p:first-child{margin-top:0;}
+.product .prd_detail_view .detail_view_info span{display:block;margin-top:15px;font-size:14px;color:#f06418;}
+.product .prd_detail_view .detail_view_topping{}
+.product .prd_detail_view .detail_view_topping table{margin-top:40px;}
+.product .prd_detail_view .detail_view_topping table:first-child{margin-top:0;}
+.product .prd_detail_view .detail_view_nutrient{}
+.product .prd_detail_view .detail_view_nutrient .sel_box{float:right;margin-bottom:20px;}
+.product .prd_detail_view .detail_view_nutrient .tbl_type th{padding:10px;vertical-align:top;}
+.product .prd_detail_view .detail_view_nutrient .tbl_type td{padding:10px;}
+.product .prd_detail_view .detail_view_nutrient p{margin-top:15px;font-size:14px;color:#f06418;}
+
+
+
+

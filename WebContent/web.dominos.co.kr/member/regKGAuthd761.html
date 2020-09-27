@@ -1,0 +1,48 @@
+<div>
+KG모빌리언스에서 제공하는 페이지로 이동중입니다
+</div>
+<form name="frm" accept-charset='euc-kr'>
+	<input type="hidden" name="CASH_GB" id="CASH_GB" value="CI"> 						<!-- 대표결제수단(고정)  -->
+	<input type="hidden" name="PAY_MODE" id="PAY_MODE" value="10"> 				<!-- 연동시 테스트,실결제구분 ( 00 : 테스트결제, 10 : 실거래결제 ) -->
+	<input type="hidden" name="Tradeid" id="Tradeid" value=""> 							<!-- 가맹점거래번호 (유니크한 값 세팅) -->
+	<!-- 서비스아이디 임시 -->
+	<input type="hidden" name="CI_SVCID" id="CI_SVCID" value="190710000001"> 
+	<input type="hidden" name="CI_Mode" id="CI_Mode" value="61"> 						<!-- 61:SMS발송  67:SMS미발송 (기타 모드는 연동매뉴얼 참조) -->
+	<input type="hidden" name="Okurl" id="Okurl" value="regKGResponse.html">						<!-- 성공URL : 완료통보페이지 -->
+	<input type="hidden" name="Siteurl" id="Siteurl" value="www.dominos.co.kr">			<!-- 사이트URL : 사이트 -->
+	<input type="hidden" name="CALL_TYPE" id="CALL_TYPE" value="SELF">
+	<input type="hidden" name="MSTR" id="MSTR" value="findId">
+	<input type="hidden" name="DI_CODE" id="DI_CODE" value="K000108a0199">
+	</form>
+
+<script src="../../auth.mobilians.co.kr/js/ext/ext_inc_comm.js"></script>
+
+<script language="javascript">
+
+	//Tradeid 생성 ( 서비스아이디 + _년월일밀리초 )
+	var d = new Date();
+
+	var nowTime =
+	leadingZeros(d.getFullYear(), 4) +
+	leadingZeros(d.getMonth() + 1, 2) +
+	leadingZeros(d.getDate(), 2) +
+	leadingZeros(d.getHours(), 2) +
+	leadingZeros(d.getMinutes(), 2) +
+	leadingZeros(d.getSeconds(), 2) +
+	leadingZeros(d.getMilliseconds(), 3);
+
+	function leadingZeros(n, digits) {
+		var zero = '';
+		n = n.toString();
+
+		if (n.length < digits) {
+			for (i = 0; i < digits - n.length; i++)
+				zero += '0';
+		}
+		return zero + n;
+	}
+	document.getElementById("Tradeid").value = document.getElementById("CI_SVCID").value + "_" + nowTime;
+
+	MCASH_PAYMENT(document.frm);
+</script>
+
